@@ -16,3 +16,115 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.header {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  justify-content: center; /* центрируем по горизонтали */
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px; /* расстояние между ссылками */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #4caf50;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.feedback-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.feedback-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.feedback-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.feedback-form button:hover {
+  background-color: #45a049;
+}
